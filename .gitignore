@@ -1,55 +1,29 @@
-# Prerequisites
-*.d
-
-# Object files
+# Tạo file .gitignore
+cat > .gitignore << 'EOF'
+# Compiled files
 *.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
 *.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+p2p_chat
 
 # Debug files
 *.dSYM/
-*.su
-*.idb
-*.pdb
+*.log
+valgrind.log
+gmon.out
+core
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
 
-# debug information files
-*.dwo
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+EOF
